@@ -205,17 +205,17 @@ body
         transform: matrix(1, -0.58, 0, 0.89, 0, 0)
 .say_about
     position: relative
-    &_photo
+    &_photo_1
         position: absolute
         z-index: 2
-        margin-top: 550px
+        margin-top: 530px
         background: url('/src/img/what_say_about_us_1.png') center (center / cover) no-repeat
         min-width: 723px
         min-height: 435px
     &_header
         position: absolute
         z-index: 2
-        margin-top: 550px
+        margin-top: 530px
         font-weight: 500
         font-size: 60px
         line-height: 72px
@@ -223,7 +223,7 @@ body
     &_people_photo
         position: absolute
         z-index: 2
-        margin-top: 710px
+        margin-top: 690px
         background: url('/src/icons/photo_of_people.png')
         width: 165px
         height: 165px
@@ -231,7 +231,7 @@ body
     &_name
         position: absolute
         z-index: 2
-        margin-top: 750px
+        margin-top: 730px
         margin-left: 200px
         font-weight: 500
         font-size: 30px
@@ -239,11 +239,160 @@ body
     &_job
         position: absolute
         z-index: 2
-        margin-top: 790px
+        margin-top: 760px
         margin-left: 230px
         font-weight: 500
         font-size: 17px
         color: #9E9E9E
+    &_descr
+        position: absolute
+        z-index: 2
+        margin-top: 880px
+        font-weight: 500
+        font-size: 25px
+        line-height: 34px
+        color: #525252
+    &_circle_prev
+        position: absolute
+        z-index: 2
+        margin-top: 970px
+        margin-left: 150px
+        border-radius: 100%
+        width: 62.07px
+        height: 62.07px
+        background: #FFFFFF
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25)
+        &_row
+            position: absolute
+            z-index: 2
+            top: 50%
+            transform: translateX(-50%)
+            left: 50%
+            width: 30px
+            height: 2px
+            background-color: green
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                margin-top: -5px
+                margin-left: -3px
+                width: 15px
+                background-color: green
+                height: 2px
+                transform: rotate(-45deg)
+                -webkit-transform: rotate(-45deg)
+            &:after  
+                content: ''
+                display: block
+                position: absolute
+                margin-top: 5px
+                margin-left: -3px
+                width: 15px
+                background-color: green
+                height: 2px
+                transform: rotate(45deg)
+                -webkit-transform: rotate(45deg)    
+    &_circle_next
+        position: absolute
+        z-index: 2
+        margin-top: 973px
+        margin-left: 240px
+        width: 62.07px
+        height: 62.07px
+        border-radius: 100%
+        background: #006970
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25)
+        &_row
+            position: absolute
+            z-index: 2
+            top: 50%
+            transform: translateX(-50%)
+            left: 50%
+            width: 30px
+            height: 2px
+            background-color: white
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                margin-top: -5px
+                margin-left: 16px
+                width: 15px
+                background-color: white
+                height: 2px
+                transform: rotate(45deg)
+                -webkit-transform: rotate(45deg)
+            &:after  
+                content: ''
+                display: block
+                position: absolute
+                margin-top: 5px
+                margin-left: 16px
+                width: 15px
+                background-color: white
+                height: 2px
+                transform: rotate(-45deg)
+                -webkit-transform: rotate(-45deg)   
+    &_photo_2
+        position: absolute
+        z-index: 2
+        margin-top: 1070px
+        background: url('/src/img/what_say_about_us_2.png') 
+        min-width: 723px
+        min-height: 435px
+.footer
+    position: relative
+    margin-top: 1567px
+    background-color: #03494E
+    min-height: 367px
+    width: 100%
+    &_products
+        margin-top: 35px
+        &_header
+            text-decoration: none 
+            color: #FFFFFF
+        &_list
+            padding: 0px
+            margin-top: 15px
+
+            list-style-type: none
+            &_item_link
+                text-decoration: none
+                color: #FFFFFF
+    &_box
+        display: flex
+        justify-content: space-between
+    &_divider
+        width: 100%
+        border-bottom: 2px solid white
+        margin: 0 auto
+        margin-top: 15px
+    &_logo
+        margin-top: 33px
+    &_social
+        display: flex
+        justify-content: space-between
+        margin-top: 35px
+        margin-right: 30px
+        &_item
+            text-align: center
+            width: 70px
+            height: 70px
+            border-radius: 100%
+            background: #187366
+            color: #F9ECE1
+            &:hover
+                color: #FFFFFF
+                border: 2px solid yellow
+            &_icon
+                margin-top: 25px
+
+                
+
+
+
+ 
 
 
 
@@ -262,79 +411,5 @@ body
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        // position: absolute
-        // z-index: 1
-        // width: 1795.32px
-        // height: 985px
-        // background: #F9ECE1
-        // transform: matrix(1, -0.58, 0, 0.89, 0, 0)
-
-
-
-
-
-
-
-// .home
-//     padding: 0px
-//     margin: 0px
-//     .container 
-//         margin: 0 auto
-//         padding: 0px
-    
-    // .row
-    //     width: 100%
-    // &_column
-    //     padding: 0px
-    //     width: 100%
-    // &_line 
-        // margin: 0px
-        // width: 99%
-        // min-height: 985px
-        // background: #F9ECE1
-        // transform: matrix(1, -0.58, 0, 0.89, 0, 0)
-        // z-index: 1
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        // &_logo 
-    //     display: block
-    //     margin-top: 50px
-    //     margin-left: 50px
-    // &_menu
-    //     margin: -90px auto 0 620px
-    //     display: flex
-    //     list-style-type: none
-    //     &_item
-    //         margin: 0 52px
-    //         display: block
-    // &_head
-
-    // &_descr
-
-    // &_btn
 
 
