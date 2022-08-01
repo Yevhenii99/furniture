@@ -1,6 +1,6 @@
 body
     margin: 0
-.promo 
+.promo
     background: url('../img/main_bg.jpg') center (center / cover) no-repeat
     min-height: 1369px
     &_logo
@@ -33,10 +33,10 @@ body
         color: #FFFFFF
     &_btn
         text-align: center
-        margin-top: 102px 
+        margin-top: 102px
         margin-left: -50px
         width: 353px
-        height: 97px 
+        height: 97px
         font-weight: 700
         font-size: 35px
         line-height: 43px
@@ -100,9 +100,9 @@ body
             margin-top: 180px
             position: absolute
             z-index: 2
-    &_descr 
+    &_descr
         width: 576px
-        min-height: 272px   
+        min-height: 272px
         font-weight: 500
         font-size: 25px
         line-height: 34px
@@ -131,29 +131,29 @@ body
             z-index: 2
             margin-top: 1111px
             margin-left: 110px
-    
-    &_box_item    
+
+    &_box_item
         margin-right: 50px
         &:last-child
-            margin-right: 0px 
+            margin-right: 0px
     &_photos_1
-    
+
         position: absolute
         margin-top: 800px
         z-index: 2
         min-width: 300px
         min-height: 500px
         border-radius: 5%
-        background: url('/src/img/sofa_img.png') center (center / cover) no-repeat
+        background: url('../img/sofa_img.png') center (center / cover) no-repeat
     &_photos_2
-        
+
         position: absolute
         margin-top: 800px
         z-index: 2
         min-width: 300px
         min-height: 500px
         border-radius: 5%
-        background: url('/src/img/dining_img.png') center (center / cover) no-repeat
+        background: url('../img/dining_img.png') center (center / cover) no-repeat
     &_photos_3
         position: absolute
         margin-top: 800px
@@ -161,7 +161,7 @@ body
         min-width: 300px
         min-height: 500px
         border-radius: 5%
-        background: url('/src/img/bed_img.png') no-repeat
+        background: url('../img/bed_img.png') no-repeat
     &_photos_descr
         position: absolute
         top: 88%
@@ -184,7 +184,7 @@ body
         top: 78%
         // left: 55%
         position: absolute
-        background: url('/src/img/flat_overview.png') center (center / cover) no-repeat
+        background: url('../img/flat_overview.png') center (center / cover) no-repeat
         width: 714px
         height: 714px
     &_descr
@@ -209,7 +209,7 @@ body
         position: absolute
         z-index: 2
         margin-top: 530px
-        background: url('/src/img/what_say_about_us_1.png') center (center / cover) no-repeat
+        background: url('../img/what_say_about_us_1.png') center (center / cover) no-repeat
         min-width: 723px
         min-height: 435px
     &_header
@@ -224,7 +224,7 @@ body
         position: absolute
         z-index: 2
         margin-top: 690px
-        background: url('/src/icons/photo_of_people.png')
+        background: url('../icons/photo_of_people.png')
         width: 165px
         height: 165px
         border-radius: 100%
@@ -282,7 +282,7 @@ body
                 height: 2px
                 transform: rotate(-45deg)
                 -webkit-transform: rotate(-45deg)
-            &:after  
+            &:after
                 content: ''
                 display: block
                 position: absolute
@@ -292,7 +292,7 @@ body
                 background-color: green
                 height: 2px
                 transform: rotate(45deg)
-                -webkit-transform: rotate(45deg)    
+                -webkit-transform: rotate(45deg)
     &_circle_next
         position: absolute
         z-index: 2
@@ -323,7 +323,7 @@ body
                 height: 2px
                 transform: rotate(45deg)
                 -webkit-transform: rotate(45deg)
-            &:after  
+            &:after
                 content: ''
                 display: block
                 position: absolute
@@ -333,12 +333,12 @@ body
                 background-color: white
                 height: 2px
                 transform: rotate(-45deg)
-                -webkit-transform: rotate(-45deg)   
+                -webkit-transform: rotate(-45deg)
     &_photo_2
         position: absolute
         z-index: 2
         margin-top: 1070px
-        background: url('/src/img/what_say_about_us_2.png') 
+        background: url('../img/what_say_about_us_2.png')
         min-width: 723px
         min-height: 435px
 .footer
@@ -350,7 +350,7 @@ body
     &_products
         margin-top: 35px
         &_header
-            text-decoration: none 
+            text-decoration: none
             color: #FFFFFF
         &_list
             padding: 0px
@@ -388,28 +388,61 @@ body
             &_icon
                 margin-top: 25px
 
-                
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    // z-index: 1050
+    display: none
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background-color: rgba(0, 0, 0, 0.5)
+    &_dialog
+        max-width: 500px
+        margin: 40px auto
 
+    &_content
+        position: relative
+        width: 100%
+        padding: 40px
+        background-color: #fff
+        border: 1px solid rgba(0, 0, 0, 0.2)
+        border-radius: 4px
+        max-height: 80vh
+        overflow-y: auto
 
+    &_close
+        position: absolute
+        top: 8px
+        right: 14px
+        font-size: 30px
+        color: #000
+        opacity: 0.5
+        font-weight: 700
+        border: none
+        background-color: transparent
+        cursor: pointer
 
- 
+    &_title
+        text-align: center
+        font-size: 22px
+        text-transform: uppercase
 
+    &_input
+        display: block
+        margin: 20px auto 20px auto
+        width: 280px
+        height: 50px
+        background: #FFFFFF
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2)
+        border: none
+        font-size: 18px
+        text-align: center
+        padding: 0 20px
+        outline: none
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.modal .btn
+    display: block
+    width: 280px
+    margin: 0 auto

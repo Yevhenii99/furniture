@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="/src/js/script.js"></script>
     <link rel="stylesheet" href="css/stylemin.css">
 </head>
 <body>
@@ -19,14 +20,14 @@
             <div class="promo_photo"></div>
             <div class="row">
                 <div class="col-md-3">
-                    <a href="#" class="icons"><img src="/src/logo/JYR_logo.svg" alt="logotype" class="promo_logo"></a>
+                    <a href="#" class="icons"><img src="logo/JYR_logo.svg" alt="logotype" class="promo_logo"></a>
                 </div>
                 <div class="col-md-5 offset-md-4">
                     <ul class="promo_menu">
-                        <li class="promo_menu_item"><a href="#" class="promo_menu_link"><img src="/src/icons/HOME.png" alt="home"></a></li>
-                        <li class="promo_menu_item"><a href="#" class="promo_menu_link"><img src="/src/icons/ABOUT.png" alt="home"></a></li>
-                        <li class="promo_menu_item"><a href="#" class="promo_menu_link"><img src="/src/icons/CATALOG.png" alt="home"></a></li>
-                        <li class="promo_menu_item"><a href="#" class="promo_menu_link"><img src="/src/icons/CONTACT.png" alt="home"></a></li>
+                        <li class="promo_menu_item"><a href="#" class="promo_menu_link"><img src="icons/HOME.png" alt="home"></a></li>
+                        <li class="promo_menu_item"><a href="#" class="promo_menu_link"><img src="icons/ABOUT.png" alt="home"></a></li>
+                        <li class="promo_menu_item"><a href="#" class="promo_menu_link"><img src="icons/CATALOG.png" alt="home"></a></li>
+                        <li class="promo_menu_item"><a href="#" class="promo_menu_link"><img src="icons/CONTACT.png" alt="home"></a></li>
                     </ul>
                 </div>
             </div>
@@ -68,7 +69,7 @@
                         </ul>
                         <div class="line_rotate"></div>
                         <div class="col-md-6 offset-md-0">
-                            <img class="line_img" src="/src/img/chair_img.png" alt="chair">
+                            <img class="line_img" src="img/chair_img.png" alt="chair">
                         </div>
                         <div class="col-md-5 offset-md-6">
                             <div class="line_header">
@@ -86,7 +87,7 @@
                             <h2 class="line_header_2">New in <br>
                                 Store Now</h2>
                             <h2 class="line_check_all">Check All</h2>
-                            <img src="/src/icons/row.png" alt="" class="line_check_all_row">
+                            <img src="icons/row.png" alt="" class="line_check_all_row">
                         </div>
                         <div class="row">
                             <div class="line_box_item col-md-3 offset-md-3">
@@ -161,7 +162,7 @@
             <div class="row">
 
                 <div class="col-md-2 offset-md-0">
-                    <img class="footer_logo" src="/src/logo/JYR_logo.svg" alt="logotype">
+                    <img class="footer_logo" src="logo/JYR_logo.svg" alt="logotype">
                 </div>
                 <div class="col-md-4 offset-md-6">
                     <div class="footer_social">
@@ -233,5 +234,19 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <form action="#">
+                    <div data-close class="modal_close">&times;</div>
+                    <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
