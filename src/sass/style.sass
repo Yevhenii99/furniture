@@ -3,6 +3,7 @@ body
 .promo
     background: url('../img/main_bg.jpg') center (center / cover) no-repeat
     min-height: 1369px
+    // display: none
     &_logo
         margin-top: 50px
         margin-left: -50px
@@ -46,6 +47,7 @@ body
         backdrop-filter: blur(6px)
         border-radius: 13px
 .line
+    // display: none
     position: relative
     .container
         padding: 0px
@@ -100,6 +102,43 @@ body
             margin-top: 180px
             position: absolute
             z-index: 2
+    &_prev_arrow_circle
+        position: relative
+        z-index: 2
+        display: none
+        top: 1240px
+        width: 40px
+        height: 40px
+        border-radius: 100%
+        background-color: grey
+    &_next_arrow_circle
+        position: relative
+        z-index: 2
+        display: none
+        top: 1281px
+        left: 50px
+        width: 40px
+        height: 40px
+        border-radius: 100%
+        background-color: grey
+    &_next_arrow
+        position: relative
+        top: -25%
+        left: 20%
+        color: #fff
+        font-size: 35px
+        cursor: pointer
+    &_prev_arrow
+        position: relative
+        top: -25%
+        left: 20%
+        color: #fff
+        font-size: 35px
+        cursor: pointer
+
+        
+
+            
     &_descr
         width: 576px
         min-height: 272px
@@ -122,55 +161,120 @@ body
         position: absolute
         z-index: 2
         margin-top: 1100px
+        cursor: pointer
         font-weight: 500
         font-size: 25px
         line-height: 34px
         color: #525252
-        &_row
+        &_arrow
             position: absolute
             z-index: 2
-            margin-top: 1111px
-            margin-left: 110px
+            margin-top: 1150px
+            margin-left: 80px
+            cursor: pointer
 
     &_box_item
         margin-right: 50px
         &:last-child
             margin-right: 0px
     &_photos_1
-
         position: absolute
         margin-top: 800px
+        // display: none
         z-index: 2
         min-width: 300px
         min-height: 500px
         border-radius: 5%
+        color: #fff
+        text-align: center
+        font-size: 25px
         background: url('../img/sofa_img.png') center (center / cover) no-repeat
     &_photos_2
-
         position: absolute
         margin-top: 800px
         z-index: 2
         min-width: 300px
         min-height: 500px
         border-radius: 5%
+        color: #fff
+        text-align: center
+        font-size: 25px
         background: url('../img/dining_img.png') center (center / cover) no-repeat
     &_photos_3
         position: absolute
         margin-top: 800px
         z-index: 2
+        // display: none
         min-width: 300px
         min-height: 500px
         border-radius: 5%
+        color: #fff
+        text-align: center
+        font-size: 25px
         background: url('../img/bed_img.png') no-repeat
-    &_photos_descr
+
+.photo_style_first
+    position: absolute
+    margin-top: 800px
+    z-index: 2
+    margin-right: 25px
+    min-width: 200px
+    min-height: 300px
+    border-radius: 5%
+    color: #fff
+    text-align: center
+    font-size: 25px
+.photo_style_sec
+    position: absolute
+    margin-top: 1100px
+    display: block
+    z-index: 2
+    margin-right: 25px
+    min-width: 200px
+    min-height: 300px
+    border-radius: 5%
+    color: #fff
+    text-align: center
+    font-size: 25px
+    &_photos_4
         position: absolute
-        top: 88%
-        left: 50%
-        transform: translateX(-50%)
-        font-weight: 500
-        font-size: 40px
-        color: #FFFFFF
+        margin-top: 1000px
+        z-index: 2
+        min-width: 200px
+        min-height: 300px
+        border-radius: 5%
+        color: #fff
+        text-align: center
+        font-size: 25px
+        background: url('../img/kitchen.png') center (center / cover) no-repeat
+    &_photos_5
+        position: absolute
+        margin-top: 1000px
+        z-index: 2
+        // display: none
+        min-width: 200px
+        min-height: 300px
+        border-radius: 5%
+        background: url('../img/bath.png') center (center / cover) no-repeat
+    &_photos_6
+        position: absolute
+        margin-top: 1000px
+        z-index: 2
+        // display: none
+        min-width: 200px
+        min-height: 300px
+        border-radius: 5%
+        background: url('../img/kids.png') center (center / cover) no-repeat
+    // &_photos_descr
+    //     position: absolute
+    //     top: 88%
+    //     left: 50%
+    //     transform: translateX(-50%)
+    //     font-weight: 500
+    //     font-size: 40px
+    //     color: #FFFFFF
 .choose
+    // display: none
     position: relative
     &_header
         margin-top: 1590px
@@ -204,6 +308,7 @@ body
         background: #F9ECE1
         transform: matrix(1, -0.58, 0, 0.89, 0, 0)
 .say_about
+    // display: none
     position: relative
     &_photo_1
         position: absolute
@@ -342,6 +447,7 @@ body
         min-width: 723px
         min-height: 435px
 .footer
+    // display: none
     position: relative
     margin-top: 1567px
     background-color: #03494E
@@ -388,21 +494,20 @@ body
             &_icon
                 margin-top: 25px
 
-.modal
+.modal 
     position: fixed
     top: 0
     left: 0
-    // z-index: 1050
+    z-index: 1050
     display: none
     width: 100%
     height: 100%
     overflow: hidden
     background-color: rgba(0, 0, 0, 0.5)
-    &_dialog
+    &__dialog
         max-width: 500px
         margin: 40px auto
-
-    &_content
+    &__content
         position: relative
         width: 100%
         padding: 40px
@@ -411,8 +516,7 @@ body
         border-radius: 4px
         max-height: 80vh
         overflow-y: auto
-
-    &_close
+    &__close
         position: absolute
         top: 8px
         right: 14px
@@ -423,13 +527,11 @@ body
         border: none
         background-color: transparent
         cursor: pointer
-
-    &_title
+    &__title 
         text-align: center
         font-size: 22px
         text-transform: uppercase
-
-    &_input
+    &__input
         display: block
         margin: 20px auto 20px auto
         width: 280px
@@ -441,8 +543,18 @@ body
         text-align: center
         padding: 0 20px
         outline: none
+    &__btn
+        display: block
+        width: 280px
+        font-size: 20px
+        font-weight: 500
+        margin: 0 auto
+        border: none
+        border-radius: 30% 100%
+        color: #fff
+        background-color: green
 
-.modal .btn
+.show 
     display: block
-    width: 280px
-    margin: 0 auto
+.hide
+    display: none
