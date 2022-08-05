@@ -47,7 +47,6 @@ body
         backdrop-filter: blur(6px)
         border-radius: 13px
 .line
-    // display: none
     position: relative
     .container
         padding: 0px
@@ -59,10 +58,7 @@ body
         margin: 0 auto
         margin-top: -130px
         padding: 0
-        // min-width: 1290px
         min-height: 224px
-        // left: 111px
-        // top: 884px
         background: #006970
         border-radius: 25px
         text-align: center
@@ -81,7 +77,7 @@ body
                 font-size: 70px
     &_rotate
         position: absolute
-        z-index: 1
+        z-index: -1
         margin: 0px
         top: 385px
         right: 0px
@@ -102,43 +98,11 @@ body
             margin-top: 180px
             position: absolute
             z-index: 2
-    &_prev_arrow_circle
-        position: relative
-        z-index: 2
-        display: none
-        top: 1240px
-        width: 40px
-        height: 40px
-        border-radius: 100%
-        background-color: grey
-    &_next_arrow_circle
-        position: relative
-        z-index: 2
-        display: none
-        top: 1281px
-        left: 50px
-        width: 40px
-        height: 40px
-        border-radius: 100%
-        background-color: grey
-    &_next_arrow
-        position: relative
-        top: -25%
-        left: 20%
-        color: #fff
-        font-size: 35px
-        cursor: pointer
-    &_prev_arrow
-        position: relative
-        top: -25%
-        left: 20%
-        color: #fff
-        font-size: 35px
-        cursor: pointer
+    &_photos_descr
+        margin-left: 85px
+        font-size: 25px
+        color: #525252
 
-        
-
-            
     &_descr
         width: 576px
         min-height: 272px
@@ -177,104 +141,32 @@ body
         margin-right: 50px
         &:last-child
             margin-right: 0px
-    &_photos_1
-        position: absolute
-        margin-top: 800px
-        // display: none
-        z-index: 2
-        min-width: 300px
-        min-height: 500px
-        border-radius: 5%
-        color: #fff
-        text-align: center
-        font-size: 25px
-        background: url('../img/sofa_img.png') center (center / cover) no-repeat
-    &_photos_2
-        position: absolute
-        margin-top: 800px
-        z-index: 2
-        min-width: 300px
-        min-height: 500px
-        border-radius: 5%
-        color: #fff
-        text-align: center
-        font-size: 25px
-        background: url('../img/dining_img.png') center (center / cover) no-repeat
-    &_photos_3
-        position: absolute
-        margin-top: 800px
-        z-index: 2
-        // display: none
-        min-width: 300px
-        min-height: 500px
-        border-radius: 5%
-        color: #fff
-        text-align: center
-        font-size: 25px
-        background: url('../img/bed_img.png') no-repeat
+// .photo_style_first
+//     position: absolute
+//     margin-top: 800px
+//     z-index: 2
+//     margin-right: 25px
+//     min-width: 200px
+//     min-height: 300px
+//     border-radius: 5%
+//     color: #fff
+//     text-align: center
+//     font-size: 25px
+// .photo_style_sec
+//     position: absolute
+//     margin-top: 1100px
+//     display: block
+//     z-index: 2
+//     margin-right: 25px
+//     min-width: 200px
+//     min-height: 300px
+//     border-radius: 5%
+//     color: #fff
+//     text-align: center
+//     font-size: 25px
 
-.photo_style_first
-    position: absolute
-    margin-top: 800px
-    z-index: 2
-    margin-right: 25px
-    min-width: 200px
-    min-height: 300px
-    border-radius: 5%
-    color: #fff
-    text-align: center
-    font-size: 25px
-.photo_style_sec
-    position: absolute
-    margin-top: 1100px
-    display: block
-    z-index: 2
-    margin-right: 25px
-    min-width: 200px
-    min-height: 300px
-    border-radius: 5%
-    color: #fff
-    text-align: center
-    font-size: 25px
-    &_photos_4
-        position: absolute
-        margin-top: 1000px
-        z-index: 2
-        min-width: 200px
-        min-height: 300px
-        border-radius: 5%
-        color: #fff
-        text-align: center
-        font-size: 25px
-        background: url('../img/kitchen.png') center (center / cover) no-repeat
-    &_photos_5
-        position: absolute
-        margin-top: 1000px
-        z-index: 2
-        // display: none
-        min-width: 200px
-        min-height: 300px
-        border-radius: 5%
-        background: url('../img/bath.png') center (center / cover) no-repeat
-    &_photos_6
-        position: absolute
-        margin-top: 1000px
-        z-index: 2
-        // display: none
-        min-width: 200px
-        min-height: 300px
-        border-radius: 5%
-        background: url('../img/kids.png') center (center / cover) no-repeat
-    // &_photos_descr
-    //     position: absolute
-    //     top: 88%
-    //     left: 50%
-    //     transform: translateX(-50%)
-    //     font-weight: 500
-    //     font-size: 40px
-    //     color: #FFFFFF
 .choose
-    // display: none
+    margin-top: -1200px
     position: relative
     &_header
         margin-top: 1590px

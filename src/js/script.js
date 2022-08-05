@@ -48,16 +48,45 @@ window.addEventListener('DOMContentLoaded', () => {
     //--- Slider
 
     function slider() {
-        const check = document.querySelector('.line_check_all'),
-        checkArrow = document.querySelector('.line_check_all_arrow'),
-        lineBox = document.querySelectorAll('.line_box_item'),
-        photo1 = document.querySelector('.line_photos_1'),
-        photo2 = document.querySelector('.line_photos_2'),
-        photo3 = document.querySelector('.line_photos_3'),
-        photo4 = document.querySelector('.line_photos_4'),
-        photo5 = document.querySelector('.line_photos_5'),
-        photo6 = document.querySelector('.line_photos_6');
-    }
+        const wrapper = document.querySelector('.wrapper'),
+              slideField = document.querySelector('.inside_block'),
+              slides = document.querySelectorAll('.line_photos img'),
+              width = window.getComputedStyle(wrapper).width,
+              checkAll = document.querySelector('.line_check_all');
+
+              let offset = 0;
+
+              slideField.style.width = 100 * slides.length + '%';
+              slideField.style.display = 'flex';
+              slideField.style.transition = '1.0s all';
+              wrapper.style.overflow = 'hidden';
+
+              slides.forEach(item => {
+                item.style.width = width;
+                item.style.cssText = `
+                display: flex;
+                position: absolute;
+                width: 230px;
+                height: 350px;
+                margin-top: 900px;
+                z-index: 1000;
+                position: relative;
+                border-radius: 5%;
+                backround: center (center / cover) no-repeat;
+                `;
+              });
+
+              checkAll.addEventListener('click', () => {
+                if (offset === +width.slice(0, width.length - 2) * (slides.length - 5)) {
+                    offset = 0;
+                } else {
+                    offset += +width.slice(0, width.length - 2);
+                }
+                slideField.style.transform = `translateX(-${offset}px)`;
+              });
+
+    };
+    slider();
   
 
 
